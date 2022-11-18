@@ -33,38 +33,11 @@ public class Progress : MonoBehaviour
             transform.parent = null;
             DontDestroyOnLoad(gameObject);
             Instance = this;
-#if UNITY_WEBGL && !UNITY_EDITOR
-            LoadExtern();
-#endif
         }
         else
         {
             Destroy(gameObject);
         }
     }
-    public void LoadWeapons(List<WeaponItem> weaponItems)
-    {
-        player._weapons.Clear();
 
-        foreach (var weaponItem in weaponItems)
-        {
-            player.AddWeaponToList(weaponItem);
-        }
-
-        
-    }
-#if UNITY_WEBGL && !UNITY_EDITOR
-    public void Save() // Сохраняем объект на сервер по пути: Unity - SDK - JS
-    {
-        string jsonString = JsonUtility.ToJson(PlayerInfo);
-        string weaponsString = string.Join(",", WeaponItems);
-        //SaveExtern(jsonString);
-        //SaveExtern(weaponsString);
-    }
-#endif
-    public void SetPlayerInfo(string value)  // Получаем объект из javaScript (по пути: Unity - SDK - JS)
-    {
-        PlayerInfo = JsonUtility.FromJson<PlayerInfo>(value);
-        _playerInfoText.text = PlayerInfo.Money.ToString();
-    }
 }

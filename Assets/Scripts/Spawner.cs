@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.Events;
 public class Spawner : MonoBehaviour
@@ -66,9 +67,6 @@ public class Spawner : MonoBehaviour
         _currentWaveNumber++;
         SetWave(_currentWaveNumber);
         _spawned = 0;
-#if UNITY_WEBGL && !UNITY_EDITOR
-        Progress.Instance.Save();
-#endif
     }
     private void OnEnemyDying(Enemy enemy)
     {

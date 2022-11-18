@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.Events;
 using static UnityEngine.Rendering.DebugUI;
@@ -26,6 +27,9 @@ public class Player : MonoBehaviour
     public int Money { get; private set; }
     public event UnityAction<int, int> HealthChanged;
     public event UnityAction<int> MoneyChanged;
+    
+    [DllImport("_Internal")]
+    private static extern void ShowAdv();
 
     private void Start()
     {
@@ -101,9 +105,7 @@ public class Player : MonoBehaviour
         Money -= weapon.Price;
         MoneyChanged?.Invoke(Money);
         _weapons.Add(weapon);
-#if UNITY_WEBGL && !UNITY_EDITOR
-        Progress.Instance.Save();
-#endif
+        ShowAdv();
     }
 
     public void NextWeapon()

@@ -29,26 +29,5 @@ public class Yandex : MonoBehaviour
     {
         GiveMePlayerData();
     }
-    public void RateGameButton()
-    {
-        RateGame();
-    }
 
-    public void SetPhoto(string url)
-    {
-        StartCoroutine(DownloadImage(url));
-    }
-    // Передается адрес картинки из сети
-
-    IEnumerator DownloadImage(string mediaUrl)
-    {
-        UnityWebRequest request = UnityWebRequestTexture.GetTexture(mediaUrl);
-        yield return request.SendWebRequest();
-
-        if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
-            Debug.Log(request.error);
-        else
-            _photo.texture = ((DownloadHandlerTexture)request.downloadHandler).texture;
-    }
-    // Скачивание текстуры
 }

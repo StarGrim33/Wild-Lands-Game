@@ -31,6 +31,20 @@ RateGame: function () {
     player.setData(myobj);
   },
 
+  ShowAdv : function() {
+      ysdk.adv.showFullscreenAdv({
+        callbacks: {
+        onClose: function(wasShown) {
+            console.Log("________closed_________")
+          // some action after close
+        },
+        onError: function(error) {
+          // some action on error
+        }
+    }
+})
+  },
+
   LoadExtern: function (){
     player.getData().then(_data => {
       const myJSON = JSON.stringify(_data);
