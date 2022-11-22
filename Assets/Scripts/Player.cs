@@ -28,8 +28,7 @@ public class Player : MonoBehaviour
     public event UnityAction<int, int> HealthChanged;
     public event UnityAction<int> MoneyChanged;
     
-    [DllImport("_Internal")]
-    private static extern void ShowAdv();
+
 
     private void Start()
     {
@@ -105,7 +104,6 @@ public class Player : MonoBehaviour
         Money -= weapon.Price;
         MoneyChanged?.Invoke(Money);
         _weapons.Add(weapon);
-        ShowAdv();
     }
 
     public void NextWeapon()

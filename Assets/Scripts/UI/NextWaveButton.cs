@@ -32,6 +32,7 @@ public class NextWaveButton : MonoBehaviour
 
     public void OnNextWaveButtonClick()
     {
+        ShowAdv();
         WaveNumber++;
         _spawner.NextWave();
         _nextWaveButton.gameObject.SetActive(false);

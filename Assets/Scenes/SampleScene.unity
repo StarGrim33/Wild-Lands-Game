@@ -970,8 +970,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: 6.4697876, y: 0}
-  m_SizeDelta: {x: 86.965, y: 0}
+  m_AnchoredPosition: {x: 5.6552124, y: 0}
+  m_SizeDelta: {x: 81.3495, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &189610030
 MonoBehaviour:
@@ -1742,10 +1742,10 @@ RectTransform:
   m_Father: {fileID: 1900357761}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.63684696, y: 0.892}
-  m_AnchorMax: {x: 1, y: 0.958329}
-  m_AnchoredPosition: {x: -70, y: 0.6779785}
-  m_SizeDelta: {x: -628.23315, y: -42.2995}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -464, y: -80.32202}
+  m_SizeDelta: {x: 68.766846, y: 29.7005}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &333253244
 MonoBehaviour:
@@ -2458,10 +2458,10 @@ RectTransform:
   m_Father: {fileID: 1900357761}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.010000001, y: 0.892}
-  m_AnchorMax: {x: 0.36600003, y: 0.958329}
-  m_AnchoredPosition: {x: 30, y: 0.6777344}
-  m_SizeDelta: {x: -545.5887, y: -42.2995}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 412, y: -80.322266}
+  m_SizeDelta: {x: 138.41132, y: 29.7005}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &490223467
 MonoBehaviour:
@@ -5123,7 +5123,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 2.9, y: -14.7}
+  m_AnchoredPosition: {x: 2.9000244, y: -14.700001}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1184398044
@@ -16807,16 +16807,16 @@ MonoBehaviour:
     Delay: 2
     Count: 12
   - Template: {fileID: 749191881180235799, guid: 45ef10091ea77514f8e6e0af7051eb70, type: 3}
-    Delay: 2
-    Count: 13
+    Delay: 1
+    Count: 10
   - Template: {fileID: 749191881180235799, guid: 45ef10091ea77514f8e6e0af7051eb70, type: 3}
-    Delay: 3
-    Count: 20
+    Delay: 1
+    Count: 13
   - Template: {fileID: 5466597618919308326, guid: aa899e1027a3a9c42ae3a89c73b2564e, type: 3}
     Delay: 3
     Count: 8
   - Template: {fileID: 749191881180235799, guid: 45ef10091ea77514f8e6e0af7051eb70, type: 3}
-    Delay: 3
+    Delay: 2
     Count: 13
   - Template: {fileID: 717293704554868377, guid: d3ddfc415d8bd03479263fc67904fd85, type: 3}
     Delay: 2
@@ -17649,7 +17649,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: 5.8569975, y: 0}
+  m_AnchoredPosition: {x: 3.6834106, y: 0}
   m_SizeDelta: {x: 77.4055, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1820019387
