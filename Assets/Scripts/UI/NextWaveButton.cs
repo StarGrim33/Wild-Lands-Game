@@ -10,7 +10,7 @@ public class NextWaveButton : MonoBehaviour
     [SerializeField] private Spawner _spawner;
     [SerializeField] private Button _nextWaveButton;
 
-    [DllImport("_Internal")]
+    [DllImport("__Internal")]
     private static extern void ShowAdv();
 
     public event UnityAction<int> WavesChange;

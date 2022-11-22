@@ -35,6 +35,7 @@ RateGame: function () {
       ysdk.adv.showFullscreenAdv({
         callbacks: {
         onClose: function(wasShown) {
+            console.log("________closed_________")
           // some action after close
         },
         onError: function(error) {

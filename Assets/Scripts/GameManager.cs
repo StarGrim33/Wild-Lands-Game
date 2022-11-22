@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] GameObject _mainMenu;
 
-    [DllImport("_Internal")]
+    [DllImport("__Internal")]
     private static extern void ShowAdv();
 
     public void StartGame()
