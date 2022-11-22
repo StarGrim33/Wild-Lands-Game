@@ -71,7 +71,6 @@ public class Player : MonoBehaviour
 
     public void SaveToProgress()
     {
-        Progress.Instance.PlayerInfo.Money = Money; // Сохраняем монеты
 
         var weaponList = new List<WeaponItem>(); 
 
@@ -83,7 +82,6 @@ public class Player : MonoBehaviour
             weaponList.Add(temp);
         }
 
-        Progress.Instance.PlayerInfo.WeaponItems = weaponList; // Сохраняем оружие 
     }
 
     public void AddWeaponToList(WeaponItem weaponItem)

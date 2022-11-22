@@ -713,9 +713,7 @@ MonoBehaviour:
   player: {fileID: 2070269872}
   _playerInfoText: {fileID: 54468867}
   PlayerInfo:
-    Money: 0
-    WeaponItems: []
-  WeaponItems: []
+    WaveNumber: 0
 --- !u!4 &135193178
 Transform:
   m_ObjectHideFlags: 0
