@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _health: 60
-  _reward: 15
+  _reward: 40
 --- !u!114 &8539259938386380111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,7 +180,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transitions:
   - {fileID: 3662271401122594695}
-  _speed: 3
+  _speed: 2.2
 --- !u!114 &3662271401122594695
 MonoBehaviour:
   m_ObjectHideFlags: 0

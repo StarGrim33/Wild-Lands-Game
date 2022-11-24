@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _health: 55
-  _reward: 35
+  _reward: 60
 --- !u!114 &5943353519072880650
 MonoBehaviour:
   m_ObjectHideFlags: 0

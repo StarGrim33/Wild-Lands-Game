@@ -17,7 +17,6 @@ public class RiffleBullet : MonoBehaviour
     {
         if (collision.gameObject.TryGetComponent(out Enemy enemy))
         {
-            Instantiate(Impact02, transform.position, transform.rotation);
             enemy.TakeDamage(_damage);
             Destroy(gameObject);
         }
