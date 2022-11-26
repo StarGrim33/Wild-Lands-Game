@@ -17,6 +17,7 @@ public class UziBullet : MonoBehaviour
     {
         if (collision.gameObject.TryGetComponent(out Enemy enemy))
         {
+            Instantiate(Impact02, transform.position, Quaternion.identity);
             enemy.TakeDamage(_damage);
             Destroy(gameObject);
         }
