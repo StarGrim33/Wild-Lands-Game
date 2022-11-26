@@ -1916,7 +1916,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &347486584
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3479,7 +3479,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &690696772
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5010,6 +5010,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spawner: {fileID: 1699805246}
   _nextWaveButton: {fileID: 1044006312}
+  WavesCounter: {fileID: 0}
   WaveNumber: 0
   BestWaveNumber: 0
 --- !u!95 &1044006316
@@ -18481,6 +18482,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spawner: {fileID: 1699805246}
   _nextWaveButton: {fileID: 1044006312}
+  WavesCounter: {fileID: 0}
   WaveNumber: 0
   BestWaveNumber: 0
 --- !u!224 &1861003661

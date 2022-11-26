@@ -4,11 +4,13 @@ using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using YG;
 
 public class NextWaveButton : MonoBehaviour
 {
     [SerializeField] private Spawner _spawner;
     [SerializeField] private Button _nextWaveButton;
+    public WavesCounter WavesCounter;
 
     [DllImport("__Internal")]
     private static extern void ShowAdv();
@@ -20,7 +22,6 @@ public class NextWaveButton : MonoBehaviour
     private void Awake()
     {
         _spawner.AllEnemySpawned += OnAllEnemySpawned;
-        BestWaveNumber = Progress.Instance.PlayerInfo.BestScore;
     }
 
     private void OnDestroy()
@@ -38,6 +39,7 @@ public class NextWaveButton : MonoBehaviour
         ShowAdv();
         WaveCounter();
         BestScoreCounter();
+        WavesCounter.MySave();
         _spawner.NextWave();
         _nextWaveButton.gameObject.SetActive(false);
         WavesChange?.Invoke(WaveNumber);

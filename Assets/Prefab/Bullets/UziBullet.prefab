@@ -101,7 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _damage: 35
   _speed: 22
-  Impact02: {fileID: 100000, guid: 53d301af6d66cf94497e9fcec3cb6699, type: 3}
+  Impact02: {fileID: 100008, guid: 0dc8a41118815f049b519e777f0eb41e, type: 3}
   _direction: {x: 0, y: 0, z: 0}
 --- !u!61 &8057206988554851577
 BoxCollider2D:
