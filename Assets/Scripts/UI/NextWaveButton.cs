@@ -15,9 +15,12 @@ public class NextWaveButton : MonoBehaviour
 
     public event UnityAction<int> WavesChange;
     public int WaveNumber;
+    public int BestWaveNumber;
+
     private void Awake()
     {
         _spawner.AllEnemySpawned += OnAllEnemySpawned;
+        BestWaveNumber = Progress.Instance.PlayerInfo.BestScore;
     }
 
     private void OnDestroy()
@@ -33,10 +36,23 @@ public class NextWaveButton : MonoBehaviour
     public void OnNextWaveButtonClick()
     {
         ShowAdv();
-        WaveNumber++;
+        WaveCounter();
+        BestScoreCounter();
         _spawner.NextWave();
         _nextWaveButton.gameObject.SetActive(false);
         WavesChange?.Invoke(WaveNumber);
+    }
+    public void WaveCounter()
+    {
+        WaveNumber++;
+        BestScoreCounter();
+    }
+    public void BestScoreCounter()
+    {
+        if (WaveNumber > BestWaveNumber)
+        {
+            BestWaveNumber = WaveNumber;
+        }
     }
 
 }

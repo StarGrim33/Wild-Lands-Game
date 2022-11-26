@@ -25,9 +25,9 @@ RateGame: function () {
           })
     },
 
-  SaveExtern: function (data){
-    var dataString = UTF8ToString(data);
-    var myobj = JSON.parse(dataString);
+  SaveExtern: function (date){
+    var dateString = UTF8ToString(date);
+    var myobj = JSON.parse(dateString);
     player.setData(myobj);
   },
 
@@ -46,8 +46,8 @@ RateGame: function () {
   },
 
   LoadExtern: function (){
-    player.getData().then(_data => {
-      const myJSON = JSON.stringify(_data);
+    player.getData().then(_date => {
+      const myJSON = JSON.stringify(_date);
       myGameInstance.SendMessage('Progress', 'SetPlayerInfo', myJSON);
     });
   },

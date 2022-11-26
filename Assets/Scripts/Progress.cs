@@ -8,7 +8,7 @@ using UnityEngine;
 [System.Serializable]
 public class PlayerInfo
 {
-    public int WaveNumber;
+    public int BestScore;
 }
 public class Progress : MonoBehaviour
 {
@@ -16,10 +16,10 @@ public class Progress : MonoBehaviour
     [SerializeField] TextMeshProUGUI _playerInfoText;
     public PlayerInfo PlayerInfo;
 
-    [DllImport("_Internal")]
+    [DllImport("__Internal")]
     private static extern void SaveExtern(string data);
 
-    [DllImport("_Internal")]
+    [DllImport("__Internal")]
     private static extern void LoadExtern();
 
     public static Progress Instance;
